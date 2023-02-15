@@ -1,0 +1,216 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2em;
+        animation: text-animation 3s ease-in-out forwards;
+    }
+
+    /* Define the animation keyframes */
+    @keyframes text-animation {
+        0% {
+            transform: scale(0.5);
+        }
+
+        100% {
+            transform: scale(2.5);
+        }
+    }
+
+    #playerDiv>img {
+        width: 80%;
+    }
+
+    #aiDiv>img {
+        width: 80%;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+
+
+
+    #cdDiv>img {
+        width: 50%;
+    }
+
+    header {}
+
+    #h1-container {}
+
+    h1 {
+        font-size: 2em;
+        animation: text-animation 3s ease-in-out forwards;
+        /* Add an animation */
+    }
+
+    /* Define the animation keyframes */
+    @keyframes text-animation {
+        0% {
+            transform: scale(0.5);
+        }
+
+        100% {
+            transform: scale(1.5);
+        }
+    }
+
+    #playerDiv>img {
+        width: 80%;
+    }
+
+    #aiDiv>img {
+        width: 80%;
+    }
+
+    #endBanner {
+        font-size: 3rem;
+        margin-bottom: -50px !important;
+    }
+
+    /* Define the button style */
+    #rpsBtn {
+        font-size: 2rem !important;
+        padding: 1vw 3vw !important;
+    }
+
+    /* Define the animation keyframes */
+    @keyframes button-animation {
+        0% {
+            transform: scale(1);
+            /* Start at normal size */
+        }
+
+        50% {
+            transform: scale(1.1);
+            /* Increase size slightly */
+        }
+
+        100% {
+            transform: scale(1);
+            /* Return to normal size */
+        }
+    }
+
+    button {
+        font-size: 4vw;
+    }
+
+    /* Add hover effect */
+    button:hover {
+        background-color: #3e8e41;
+        /* Darker green background color on hover */
+    }
+}
+
+@media (max-width: 320px) {
+    header {}
+
+    #h1-container {
+        max-width: 100% !important;
+        overflow: hidden !important;
+        font-size: 1em !important;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    h1 {
+        margin-left: 0;
+        margin-right: 0;
+        /* Set font size to 3% of the viewport width */
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 3px 1px whitesmoke;
+        /* Add a red text shadow */
+        background: -webkit-linear-gradient(black, beige);
+        /* Add a gradient background */
+        -webkit-background-clip: text;
+        /* Clip the background to the text */
+        -webkit-text-fill-color: transparent;
+        /* Make the text transparent */
+
+
+    }
+
+    h1 {
+        animation: text-animation 3s ease-in-out forwards;
+        /* Add an animation */
+    }
+
+    /* Define the animation keyframes */
+    @keyframes text-animation {
+        0% {
+            transform: scale(0.5);
+        }
+
+        100% {
+            transform: scale(3);
+        }
+    }
+
+    body {
+        background-color: rgb(31, 31, 31);
+    }
+
+
+    /* Define the footer style */
+    footer {
+        font-size: 3vh;
+        height: 10vh;
+        color: white;
+        background-color: #333;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* Define the flex container */
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        /* Makes sure the container takes up the full height of the viewport */
+        min-height: 100vh;
+
+        /*Center Flex*/
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* Define the main content area */
+    .main-content {
+        flex: 1;
+        /* Takes up all available space */
+
+    }
+
+    /* Define the button style */
+    button {
+
+
+        width: 100%;
+        font-size: 5rem;
+        /* Set font size to 1% of the viewport width */
+        height: auto;
+        background-color: #4CAF50;
+        /* Green background color */
+        color: white;
+        /* White text color */
+        padding: 3vw 50vw;
+        /* Set padding to 1% of the viewport width and 2% of the viewport width */
+        border: none;
+        /* Remove the border */
+        cursor: pointer;
+        /* Add a cursor on hover */
+        /* Increase the font size */
+        transition: background-color 0.3s ease;
+        /* Add a transition effect for the background color */
+        /* Add animation effect */
+        animation: button-animation 0.5s ease-in-out;
+    }
+
+
+
+}
